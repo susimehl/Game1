@@ -1,22 +1,42 @@
 const game = new Game ()
+//sound//
+let soundFile;
+// let loopStart = 0.5;
+// let loopDuration = 0.2;
+let soundIsPlaying = false
 
 let mySound = new Audio("../assets/music/DeadPlanet.wav")
 function preload(){
     game.preload()
+    soundFile = loadSound('../assets/music/DeadPlanet.wav')
 }
    
 function setup (){
-    let cnv = createCanvas (900,600);
-    cnv.mousePressed(canvasPressed)
+    let cnv = createCanvas (800,600);
+    cnv.mousePressed(canvasPressed);
 }
 
 function draw (){
+    // if (!soundIsPlaying) {
+    //     soundFile.loop()
+    //     soundIsPlaying = true
+    // }
+    
+
+
     game.draw()
+    
 }
  
 function canvasPressed(){
-    mySound.play();
-}
+    // mySound.play();
+    //loop//
+    soundFile.loop();
+    background(0,200,50);
+    }
+
+
+
 
 function keyPressed(){
     if (keyCode === 32){
@@ -39,7 +59,7 @@ function keyPressed(){
       }
 
      if (keyCode === 13)  {
-        location.restarted()
+        location.reload()
       }
 }
 

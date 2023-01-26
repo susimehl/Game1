@@ -7,6 +7,7 @@ class Game {
         this.obstacles = []
         this.sweetsImage1
         this.sweetsImage
+      
     
     }
 
