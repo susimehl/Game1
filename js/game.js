@@ -13,10 +13,10 @@ class Game {
 
 
 preload(){
-    this.backgroundImage = loadImage("./assets/background/giffy1-4.gif")
-    this.playerImage = loadImage("./assets/player/waechter-20Picture.png")
-    this.sweetsImage = loadImage("./assets/sweets/Donut.png")
-    this.sweetsImage1 =loadImage("./assets/sweets/pille.png")
+    this.backgroundImage = loadImage("assets/background/giffy1-4.gif")
+    this.playerImage = loadImage("assets/player/waechter-20Picture.png")
+    this.sweetsImage = loadImage("assets/sweets/Donut.png")
+    this.sweetsImage1 =loadImage("assets/sweets/pille.png")
 }
 
 draw(){
