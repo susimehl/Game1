@@ -5,10 +5,10 @@ let soundFile;
 // let loopDuration = 0.2;
 let soundIsPlaying = false
 
-let mySound = new Audio("assets/music/DeadPlanet.wav")
+let mySound = new Audio("../assets/music/DeadPlanet.wav")
 function preload(){
     game.preload()
-    soundFile = loadSound('assets/music/DeadPlanet.wav')
+    soundFile = loadSound('../assets/music/DeadPlanet.wav')
 }
    
 function setup (){
